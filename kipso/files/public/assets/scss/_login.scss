@@ -1,0 +1,131 @@
+.login-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.login-wrapper .login-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 630px);
+  height: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+.login-wrapper .login-content__inner {
+  width: 100%;
+  max-width: 630px;
+  padding-left: 115px;
+  padding-right: 115px;
+  background-color: #fff;
+  box-shadow: 9.986px -0.523px 30px 0px rgba(5, 5, 6, 0.1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.login-wrapper form input[type="text"],
+.login-wrapper form input[type="email"],
+.login-wrapper form input[type="password"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  display: block;
+  background-color: $thm-gray;
+  height: 77px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+.login-wrapper form ::placeholder {
+  opacity: 1;
+  color: inherit;
+}
+.login-wrapper form p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #81868a;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+.login-wrapper form p a {
+  color: inherit;
+}
+.login-wrapper form p a:hover {
+  color: $thm-base-color;
+}
+
+.login-wrapper form .thm-btn {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 21.5px 58px;
+}
+.login-wrapper form .thm-btn:hover {
+  background-color: $thm-black;
+  color: #fff;
+}
+.login-wrapper .login-content__inner .copyright-text {
+  margin-top: auto;
+  text-align: center;
+  color: #81868a;
+  margin-bottom: 60px;
+}
+
+.login-wrapper .logo {
+  margin-top: 90px;
+  margin-bottom: 140px;
+}
+
+.login-wrapper .signup-link {
+  font-size: 18px;
+  color: #81868a;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 35px;
+  text-align: center;
+}
+.login-wrapper .signup-link a {
+  color: $thm-base-color;
+  transition: all 500ms ease;
+}
+.login-wrapper .signup-link a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .login-wrapper .login-content__inner {
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .login-wrapper .logo {
+    margin-bottom: 50px;
+  }
+  .login-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .login-wrapper .login-bg {
+    width: 100%;
+    top: 0;
+    min-height: 100vh;
+    height: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .login-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
